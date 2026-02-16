@@ -19,17 +19,15 @@ Each file covers a specific design domain. They are written as actionable guidel
 
 | File | Domain |
 |------|--------|
-| `01-layout.md` | Layout, spacing, responsive design, grids |
-| `02-typography.md` | Font choices, sizing, hierarchy, readability |
-| `03-color.md` | Color usage, semantic colors, palettes |
-| `04-dark-mode.md` | Dark mode design, elevation, backgrounds |
-| `05-accessibility.md` | Contrast, keyboard nav, screen readers, ARIA |
-| `06-motion-animation.md` | Transitions, easing, reduced motion |
-| `07-feedback-loading.md` | Progress indicators, loading states, user feedback |
-| `08-navigation.md` | Navigation patterns, hierarchy, search |
-| `09-components.md` | Buttons, forms, modals, alerts, lists, tables |
-| `10-iconography-imagery.md` | Icons, images, SF Symbols principles |
-| `11-branding.md` | Brand expression within consistent design |
+| `layout.md` | Layout, spacing, responsive design, grids |
+| `typography.md` | Font choices, sizing, hierarchy, readability |
+| `color.md` | Color usage, semantic colors, palettes |
+| `accessibility.md` | Contrast, keyboard nav, screen readers, ARIA |
+| `loading-states-and-feedback.md` | Progress indicators, loading states, user feedback |
+| `navigation.md` | Navigation patterns, hierarchy, search |
+| `rules-for-common-components.md` | Buttons, forms, modals, alerts, lists, tables |
+| `icons.md` | Icons, images, SF Symbols principles |
+| `consistency-and-branding.md` | Brand expression within consistent design |
 
 ## Key Takeaway for Web Agents
 
