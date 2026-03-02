@@ -3,7 +3,7 @@
 # Automated Website Build Script
 # Runs Claude Code through phases to build a website from intake data.
 #
-# Usage: ./build-website.sh <intake.yaml> <output-dir>
+# Usage: ./build-website.sh <intake.md> <output-dir>
 #
 # Phases:
 #   1. Foundation - Brand design + UX planning (brand-design.md, ux-design.md)
@@ -32,14 +32,14 @@ SKILL_HACKS="${SKILLS_DIR}/design-hacks.md"
 # =============================================================================
 
 if [ $# -lt 2 ]; then
-    echo "Usage: $0 <intake.yaml> <output-dir>"
+    echo "Usage: $0 <intake.md> <output-dir>"
     echo ""
     echo "Arguments:"
-    echo "  intake.yaml   Path to the client intake YAML file"
+    echo "  intake.md     Path to the client intake Markdown file"
     echo "  output-dir    Directory where the website will be built"
     echo ""
     echo "Example:"
-    echo "  $0 ./clients/acme-plumbing.yaml ./projects/acme-plumbing"
+    echo "  $0 ./clients/acme-plumbing.md ./projects/acme-plumbing"
     exit 1
 fi
 
@@ -87,7 +87,7 @@ init_progress() {
     cat > "$PROGRESS_FILE" << EOF
 # Website Build Progress
 
-**Client:** $(basename "$INTAKE_FILE" .yaml)
+**Client:** $(basename "$INTAKE_FILE" .md)
 **Started:** $(timestamp)
 **Intake File:** $INTAKE_FILE
 
