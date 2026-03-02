@@ -1,0 +1,151 @@
+# Sample Client Intake File
+# This is the expected format for the build-website.sh script
+
+# =============================================================================
+# SECTION 1: Business Basics
+# =============================================================================
+business:
+  name: "Acme Plumbing Co."
+  type: "service"  # service | retail | restaurant | professional | creative | nonprofit
+  location: "Houston, TX"
+  service_area: "Greater Houston Area"
+  contact:
+    email: "info@acmeplumbing.com"
+    phone: "(713) 555-1234"
+  existing_website: null  # or URL if they have one
+
+# =============================================================================
+# SECTION 2: Brand Identity
+# =============================================================================
+brand:
+  has_logo: true  # true | false | "updating"
+  logo_file: "assets/logo.svg"  # path to logo if provided
+  colors:
+    primary: "#1a5276"      # Main brand color (null if none)
+    secondary: "#d4ac0d"    # Accent color (null if none)
+    # Additional colors will be derived from these
+  fonts:
+    heading: null  # null = let designer choose
+    body: null
+  personality: "professional"  # professional | friendly | luxury | playful | bold | calm | technical | warm
+  inspiration_sites:
+    - url: "https://competitor1.com"
+      notes: "Like their clean layout"
+    - url: "https://modernplumber.com"
+      notes: "Good use of trust badges"
+
+# =============================================================================
+# SECTION 3: Site Structure
+# =============================================================================
+pages:
+  - name: "Home"
+    include: true
+    purpose: "Introduce business, build trust, drive to contact"
+  - name: "About"
+    include: true
+    purpose: "Tell our story, show team, build credibility"
+  - name: "Services"
+    include: true
+    purpose: "List all services with details"
+  - name: "Contact"
+    include: true
+    purpose: "Contact form, phone, location map"
+  - name: "Testimonials"
+    include: true
+    purpose: "Social proof from past customers"
+  - name: "FAQ"
+    include: false
+  - name: "Blog"
+    include: false
+  - name: "Portfolio"
+    include: false
+
+additional_pages:
+  - "Individual service pages for major services"
+
+primary_cta:
+  action: "get-quote"  # contact-form | phone-call | book-appointment | get-quote | buy-product | sign-up
+  button_text: "Get a Free Quote"
+  destination: "contact"  # page or external URL
+
+# =============================================================================
+# SECTION 4: Content & Messaging
+# =============================================================================
+content:
+  headline: "Houston's Most Trusted Plumbers for 25 Years"
+  subheadline: "Fast, reliable plumbing services for your home or business"
+  
+  services:
+    - name: "Emergency Plumbing"
+      description: "24/7 emergency repairs when you need us most"
+    - name: "Water Heater Services"
+      description: "Installation, repair, and replacement"
+    - name: "Drain Cleaning"
+      description: "Clear clogs and prevent future backups"
+    - name: "Pipe Repair"
+      description: "Fix leaks and replace damaged pipes"
+    - name: "Bathroom Remodeling"
+      description: "Complete bathroom plumbing for renovations"
+  
+  differentiators:
+    - "24/7 Emergency Service"
+    - "Licensed & Insured Since 1998"
+    - "Free Estimates"
+    - "100% Satisfaction Guarantee"
+    - "Same-Day Service Available"
+  
+  testimonials:
+    - quote: "They fixed our leak in under an hour. Amazing service!"
+      name: "John D."
+      location: "Katy, TX"
+    - quote: "Professional, on time, and fair pricing. Highly recommend."
+      name: "Maria S."
+      location: "Sugar Land, TX"
+    - quote: "Best plumber we've ever used. They're our go-to now."
+      name: "Robert & Linda M."
+      location: "Houston, TX"
+  
+  about: |
+    Founded in 1998, Acme Plumbing has proudly served the Greater Houston 
+    area for over 25 years. What started as a one-man operation has grown 
+    into a team of licensed professionals dedicated to providing fast, 
+    reliable plumbing services. We treat every home like our own.
+
+# =============================================================================
+# SECTION 5: Audience & Goals
+# =============================================================================
+audience:
+  description: "Homeowners in Houston suburbs, 35-65 years old, middle to upper income"
+  pain_points:
+    - "Need reliable emergency service"
+    - "Tired of plumbers who don't show up on time"
+    - "Want fair, transparent pricing"
+
+goals:
+  success_metric: "More phone calls and quote requests from the website"
+  seo_keywords:
+    - "Houston plumber"
+    - "emergency plumbing Houston"
+    - "plumber near me"
+    - "water heater repair Houston"
+
+# =============================================================================
+# SECTION 6: Technical Requirements
+# =============================================================================
+technical:
+  domain: "acmeplumbing.com"
+  domain_situation: "have-keep"  # have-keep | have-transfer | need-new | not-sure
+  
+  update_frequency: "rarely"  # rarely | occasionally | monthly | weekly
+  cms_needs: "no"  # no | basic | full | not-sure
+  store_needs: "no"  # no | simple | full | shopify | not-sure
+  
+  timeline: "1month"  # asap | 1month | 2-3months | flexible
+  budget: "2500-5000"  # 1000-2500 | 2500-5000 | 5000-10000 | 10000+
+  
+  integrations:
+    - "analytics"  # Google Analytics
+  
+  additional_notes: |
+    We want to emphasize our emergency service availability. 
+    The phone number should be very prominent.
